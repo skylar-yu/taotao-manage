@@ -12,4 +12,5 @@
     <artifactId>taotao-manage-mapper</artifactId>
     <packaging>jar</packaging>
 
+	<!-- 就加个备注玩玩 -->
 </project>
