@@ -25,6 +25,7 @@ public class TomcatStarter {
         webAppBuilder.append(pwd).append(File.separator).append("..").append(File.separator).append("taotao-manage-web/src/main/webapp");
         String webapp = webAppBuilder.toString();
 
+
         tomcat.addWebapp(contextPath, webapp);
         tomcat.enableNaming();
         tomcat.start();
