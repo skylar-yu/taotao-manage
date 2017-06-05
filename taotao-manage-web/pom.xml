@@ -56,9 +56,8 @@
         </dependency>
     </dependencies>
 
-    <build>
+<!--    <build>
         <plugins>
-            <!--配置Tomcat插件-->
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
@@ -68,6 +67,6 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 
 </project>
