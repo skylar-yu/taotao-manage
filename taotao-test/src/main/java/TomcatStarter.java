@@ -11,7 +11,7 @@ import java.net.URL;
 public class TomcatStarter {
 
 
-    private int port = 9999;
+    private int port = 9888;
 
     private String contextPath = "/";
 
