@@ -2,6 +2,8 @@ package com.taotao.manage.controller;
 
 import java.util.List;
 
+import com.taotao.manage.pojo.ItemCat;
+import com.taotao.manage.service.ItemCatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,29 +14,30 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @RequestMapping({"item/cat"})
 @Controller
-public class ItemCatController
-{
+public class ItemCatController {
 
-//  @Autowired
-//  private com.taotao.manage.service.ItemCatService itemCatService;
 
-  /*@RequestMapping(method={org.springframework.web.bind.annotation.RequestMethod.GET})
-  public ResponseEntity<List<ItemCat>> queryItemCatListByParentId(@RequestParam(value="id", defaultValue="0") Long parentId)
-  {
-    try
+    @Autowired
+    private ItemCatService itemCatService;
+
+    @RequestMapping(method={org.springframework.web.bind.annotation.RequestMethod.GET})
+    public ResponseEntity<List<ItemCat>> queryItemCatListByParentId(@RequestParam(value="id", defaultValue="0") Long parentId)
     {
-      ItemCat record = new ItemCat();
-      record.setParentId(parentId);
-      List<ItemCat> list = this.itemCatService.queryListByWhere(record);
-      if ((null == list) || (list.isEmpty()))
-      {
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
-      }
-      return ResponseEntity.ok(list);
-    } catch (Exception e) {
-      e.printStackTrace();
+        try
+        {
+            ItemCat record = new ItemCat();
+            record.setParentId(parentId);
+            List<ItemCat> list = this.itemCatService.queryListByWhere(record);
+            if ((null == list) || (list.isEmpty()))
+            {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+            return ResponseEntity.ok(list);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
     }
 
-    return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
-  }*/
 }
