@@ -1,4 +1,4 @@
-package pojo;
+package com.taotao.manage.pojo;
 
 import java.util.Date;
 

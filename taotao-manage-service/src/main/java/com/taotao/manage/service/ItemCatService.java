@@ -10,16 +10,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.taotao.common.bean.ItemCatData;
-import com.taotao.common.bean.ItemCatResult;
-import com.taotao.common.service.RedisService;
+//import com.taotao.common.bean.ItemCatData;
+//import com.taotao.common.bean.ItemCatResult;
+//import com.taotao.common.service.RedisService;
 import com.taotao.manage.pojo.ItemCat;
 
 @Service
 public class ItemCatService extends BaseService<ItemCat>
 {
-	@Autowired
-	private RedisService redisService;
+//	@Autowired
+//	private RedisService redisService;
 	
 	private static final ObjectMapper mapper = new ObjectMapper();
 	
@@ -30,7 +30,7 @@ public class ItemCatService extends BaseService<ItemCat>
 	 * 全部查询，并且生成树状结构
 	 * @return
 	 */
-	public ItemCatResult queryAllToTree() {
+	/*public ItemCatResult queryAllToTree() {
 		
 		try {
 			String cacheResult = redisService.get(REDISKEY);
@@ -42,7 +42,7 @@ public class ItemCatService extends BaseService<ItemCat>
 			e.printStackTrace();
 		} 
 		
-		ItemCatResult result = new ItemCatResult();
+//		ItemCatResult result = new ItemCatResult();
 		// 全部查出，并且在内存中生成树形结构
 //		EasyUIResult easyUIResult = queryList(1, 99999, Order.formString("sort_order.asc"));
 		List<ItemCat> cats = super.queryAll();
@@ -98,5 +98,5 @@ public class ItemCatService extends BaseService<ItemCat>
 		}
 		
 		return result;
-	}
+	}*/
 }
