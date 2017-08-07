@@ -32,3 +32,7 @@ out
 gen
 /.idea/
 /taotao-manage.iml
+/taotao-test/taotao-test.iml
+/taotao-test/target/
+/taotao-test/work/
+/taotao-manage-web/src/test/java/TestDebug.java
