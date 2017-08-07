@@ -37,3 +37,8 @@ gen
 /taotao-test/work/
 /taotao-manage-web/src/test/java/TestDebug.java
 /taotao-manage-web/useCaseTest.puml
+taotao-manage-mapper/target/
+taotao-manage-pojo/target/
+taotao-manage-service/target/
+taotao-manage-web/src/test/
+taotao-manage-web/target/
