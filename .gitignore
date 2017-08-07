@@ -36,3 +36,4 @@ gen
 /taotao-test/target/
 /taotao-test/work/
 /taotao-manage-web/src/test/java/TestDebug.java
+/taotao-manage-web/useCaseTest.puml
