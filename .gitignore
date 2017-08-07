@@ -30,7 +30,7 @@ hs_err_pid*
 *.iml
 out
 gen
-/.idea/
+/.idea/*
 /taotao-manage.iml
 /taotao-test/taotao-test.iml
 /taotao-test/target/
@@ -42,3 +42,14 @@ taotao-manage-pojo/target/
 taotao-manage-service/target/
 taotao-manage-web/src/test/
 taotao-manage-web/target/
+/.idea/compiler.xml
+/.idea/libraries/
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/uiDesigner.xml
+/.idea/artifacts/
+/.idea/inspectionProfiles/
+/.idea/workspace.xml
+/.idea/encodings.xml
+/.idea/
